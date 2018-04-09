@@ -1,0 +1,9 @@
+db.pdvs.findOne(
+	{ "address": 
+		{ $nearSphere: 
+			{ $geometry: 
+				{ type: "Point", coordinates: [ -46.689537,-23.560505 ] }
+			} 
+		} 
+	}
+)

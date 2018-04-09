@@ -1,0 +1,13 @@
+db.pdvs.find({
+    "coverageArea": {
+        "$geoIntersects": {
+             "$geometry": {
+                 "type": "Point",
+             "coordinates": [
+                -44.189133,
+                -19.972668
+             ]
+             }
+         }
+    }
+})
